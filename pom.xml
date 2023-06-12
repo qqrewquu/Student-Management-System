@@ -224,10 +224,10 @@
                                 <goals>
                                     <goal>install-node-and-npm</goal>
                                 </goals>
-                                <configuration>
-                                    <nodeVersion>v15.4.0</nodeVersion>
-                                    <npmVersion>7.3.0</npmVersion>
-                                </configuration>
+<!--                                <configuration>-->
+<!--                                    <nodeVersion>v15.4.0</nodeVersion>-->
+<!--                                    <npmVersion>7.3.0</npmVersion>-->
+<!--                                </configuration>-->
                             </execution>
                             <execution>
                                 <id>npm install</id>
@@ -269,16 +269,6 @@
                                 </configuration>
                             </execution>
                         </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>license-maven-plugin</artifactId>
-                        <version>1.9</version>
-                        <configuration>
-                            <addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
-                            <processStartTag>========================LICENSE_START=================================</processStartTag>
-                            <processEndTag>=========================LICENSE_END==================================</processEndTag>
-                        </configuration>
                     </plugin>
                 </plugins>
             </build>

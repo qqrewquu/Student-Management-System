@@ -31,7 +31,7 @@ const TheAvatar = ({name}) => {
 }
 
 const confirm = (student, fetchStudents) => {
-    deleteStudent(999999).then(() => {
+    deleteStudent(student.id).then(() => {
         successNotification("Student deleted", `student Id ${student.id} was deleted`);
         fetchStudents();
     }).catch(err => {
